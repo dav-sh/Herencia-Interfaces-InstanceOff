@@ -5,6 +5,7 @@ import java.util.*;
 
 public class ArrayVehicles {
     private ArrayList <Vehicle> vehicles = new ArrayList<Vehicle>();
+    final int size = 20;
     private Random random = new Random();
     public ArrayVehicles() {
         addVehicle();
@@ -14,7 +15,7 @@ public class ArrayVehicles {
     
     public void addVehicle() {
         Vehicle vehicle;
-        for(int i = 0; i < 8; i++){
+        for(int i = 0; i <size; i++){
             int rnd = random.nextInt(3);
             if(rnd ==1){
                 vehicle = new Cargo("Cargo "+i);
